@@ -77,7 +77,13 @@ main{
 
 @media (max-width: 1023px){
     main{
-        height: 100vh;
+        height: 90vh;
+    }
+    .main-left{
+        height: 50%;
+    }
+    .main-right{
+        height: 50%;
     }
     .main-right p{
         width: 300px;
