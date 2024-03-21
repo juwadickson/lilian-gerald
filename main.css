@@ -19,14 +19,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: start;
-    background: url("images/main2.jpg");
-    background-position: top;
+    background: url("images/lilian.jpeg");
+    background-position: center;
     background-size:cover;
 }
 .main-left h1{
-    margin-top: 100px;
+    margin-top: 80px;
     letter-spacing: 10px;
     padding: 5px 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -74,10 +75,15 @@ main{
     }
 }
 
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   main{
+        height: 100vh;
+    }
+} */
 
 @media (max-width: 1023px){
     main{
-        height: 90vh;
+        height: 100vh;
     }
     .main-left{
         height: 50%;
@@ -98,7 +104,11 @@ main{
 
     .main-left h1{
         margin-top: 35px;
-        font-size: 20px;
-        font-weight: 800;
+        font-size: 16px;
+        font-weight: 700;
     }
 }
+
+
+
+
