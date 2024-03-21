@@ -1,0 +1,155 @@
+.container{
+  max-width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.column {
+  flex-basis: calc(25% - 20px);
+  background-color: #d3a35c69; /* Brownish gold color */
+  margin-bottom: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219);
+}
+
+.column:nth-child(even) {
+  background-color: #ff999933; /* Lighter brownish gold color */
+}
+
+.column:hover{
+  background-color: #ffe4e1;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    padding: 30px 20px;
+  }
+  .column {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
+  
+h2 {
+  font-size: 24px;
+  color: black;
+}
+
+.description {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.read-more {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000000; /* Pinkish color */
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background-color: #a7687b; /* Lighter pinkish color */
+}
+
+
+
+
+.container3 {
+  text-align: center;
+  max-width: 800px;
+  margin: 150px auto;
+}
+
+.container3 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container3 p {
+  font-size: 16px;
+  color: #666;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.icon {
+  margin: 0 10px;
+  flex: 0 1 calc(20% - 20px); /* 20% width for each icon */
+}
+
+.icon i{
+  font-size: 30px;
+  border-radius: 50%;
+  border: 2px solid #d3a45c; /* Brownish gold color */
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon i:hover {
+  transform: scale(1.1);
+}
+
+.icon-description {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #888;
+}
+
+.container3 a {
+  padding: 10px 20px;
+  background-color: #d3a45c; /* Brownish gold color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container3 a:hover {
+  background-color: #b28646; /* Darker shade of brownish gold color */
+}
+
+/* Media Queries for Tablet and Mobile */
+@media only screen and (max-width: 768px) {
+  .icon {
+    flex: 0 1 calc(33.33% - 20px); /* 33.33% width for each icon */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .icon {
+    flex: 0 1 calc(50% - 20px); /* 50% width for each icon */
+    margin: 0 5px;
+  }
+  .icon i{
+    font-size: 20px;
+  }
+  .icon-description{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .container3 {
+    margin: 30px auto;
+    padding: 10px;
+  }
+}
+
