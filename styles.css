@@ -1,6 +1,6 @@
 .container{
   max-width: 90%;
-  margin: 20px auto;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -68,6 +68,109 @@ h2 {
 
 
 
+
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 50px;
+  height: 70vh;
+}
+.about-container .columns {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+}
+
+.image {
+  background: url("images/main2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.content {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container .columns {
+      flex: 1 1 100%; /* Make each column take up the full width */
+      padding: 5px;
+      margin-top: 10px;
+  }
+  .about-container .columns:first-child{
+    height: 50vh;
+  }
+  .about-container {
+      height: auto; /* Reset height for mobile phones */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-container .columns {
+      flex-basis: 45%; /* Make each column take up 45% of the width */
+      padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container .columns {
+      flex-basis: 30%; /* Make each column take up 30% of the width */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container3 {
   text-align: center;
   max-width: 800px;
@@ -117,7 +220,7 @@ h2 {
 
 .container3 a {
   padding: 10px 20px;
-  background-color: #d3a45c; /* Brownish gold color */
+  background-color: black; /* Brownish gold color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -153,10 +256,22 @@ h2 {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Portfolio */
 .portfolio-section {
   text-align: center;
-  background-color: #ff7eb9; /* Pink color */
+  background-color: rgba(122, 0, 61, 0.144); /* Pink color */
   padding: 100px 0;
 }
 
@@ -173,11 +288,11 @@ h2 {
 }
 
 .portfolio-item {
-  width: calc(30% - 20px);
+  width: calc(20% - 20px);
   margin: 0 10px 20px;
   overflow: hidden;
   border-radius: 20px;
-  height: 500px; /* Fixed height */
+  height: 400px; /* Fixed height */
   position: relative;
   background-image: url('images/main.jpg');
   background-position: center;
@@ -239,5 +354,3 @@ h2 {
     width: calc(100% - 20px);
   }
 }
-
-
