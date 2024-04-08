@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column1 {
+    background-image: url('/images/Messi.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .column1 .name-description{
+    position: absolute;
+    top: 0;
+  }
+  .name-description {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+  
+  .info {
+    text-align: left;
+  }
+  
+  .degree {
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 8px;
+  }
+  
+  .degree-description {
+    font-size: 15px;
+  }
+  .degree-name{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.334);
+  }
+  .social-media-icons {
+    margin-top: 20px;
+  }
+  
+  .column2{
+    padding: 50px;
+    background-color: rgba(255, 0, 128, 0.767);
+  }
+
+
+  .more-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 128, 0.767);;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-info:hover {
+    background-color: #0056b3;
+  }
+  /* Responsive styles */
+  
+  
+  
+
+
+
+
+
+  /* SERVICES */
+  
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service .column {
+    flex: 1;
+    padding: 50px 40px;
+    box-sizing: border-box;
+  }
+  .service .column:nth-child(even) {
+    background-color: #fccdcd1b; /* Lighter brownish gold color */
+  }
+  .service .column:nth-child(odd) {
+    background-color: white; /* Lighter brownish gold color */
+  }
+  .service .column i{
+    color: rgba(255, 0, 128, 0.767);;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #5d5d5d;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 128, 0.767);;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  }
+  
+
+
+  .my-approach{
+    margin: 50px 0;
+  }
+  .approach{
+    padding: 40px 60px;
+  }
+  .approach .degree{
+    letter-spacing: normal;
+    color: #5d5d5d;
+  }
+  .approach .content {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:#5d5d5d;
+  }
+  
+  
+  .approach .content  .icons {
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 2px solid rgba(255, 0, 128, 0.767);;
+    color: rgba(255, 0, 128, 0.767);
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: 100vh;
+    }
+    .column {
+      flex: 1;
+      width: 100%;
+      height: auto;
+      padding: 20px 10px;
+    }
+    .degree-description{
+        overflow-wrap: break-word;
+    }
+  }
