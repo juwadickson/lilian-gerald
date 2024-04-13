@@ -7,7 +7,7 @@ main{
 }
 .main-col:first-child{
     position: relative;
-    background: url("/images/pics9.jpg");
+    background: url("../images/pics9.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -93,7 +93,7 @@ main{
     margin: 50px auto;
     padding: 30px 10px;
     text-align: center;
-    background: url("/images/pics2.jpg");
+    background: url("../images/pics2.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
