@@ -1,6 +1,6 @@
 .about-me{
     height: 70vh;
-    background: url("/images/pics7.png");
+    background: url("../images/pics7.png");
     background-size: cover;
     background-position: center;
     display: flex;
