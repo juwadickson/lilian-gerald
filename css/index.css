@@ -7,6 +7,9 @@ main{
 }
 .main-col:first-child{
     position: relative;
+    background: url("/images/pics9.jpg");
+    background-position: center;
+    background-size: cover;
 }
 .main-col:first-child span{
     font-size: 20px;
@@ -15,6 +18,7 @@ main{
     position: absolute;
     top: 10%;
     left: 30%;
+    color: white;
 }
 .main-col:last-child{
     display: flex;
@@ -89,7 +93,7 @@ main{
     margin: 50px auto;
     padding: 30px 10px;
     text-align: center;
-    background: url("../images/pics2.jpg");
+    background: url("/images/pics2.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -136,64 +140,6 @@ main{
     font-weight: 600;
   }
 
-
-/* Portfolios */
-
-.portfolios{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.portfolios h2{
-    font-size: 20px;
-}
-.portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 80vw;
-}
-.portfolio-item{
-    padding: 20px;
-    text-align: center;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.247);
-}
-.one{
-    background: url("../images/pics1.JPG");
-}
-.two{
-    background: url("../images/pics4.JPG");
-}
-.three{
-    background: url("../images/pics5.JPG");
-}
-.one, .two, .three, .four, .five,.six, .seven,.eight,.nine{ 
-    background-position: center;
-    background-size: cover;
-}
-.portfolio-details {
-    position: absolute;
-    top: 0;
-    left: -120%; /* Initially positioned outside */
-    width: 100%;
-    height: 100%;
-    background-color: #0057b3c2;
-    transition: left 0.3s ease;
-    padding: 20px 0;
-  }
-  
-  .portfolio-item:hover .portfolio-details {
-    left: 0; /* Slide in from the left on hover */
-  }
-  .portfolio-details h3,
-  .portfolio-details p{
-    color: white;
-  }
 
 
 
@@ -243,66 +189,6 @@ main{
 
 
 
-/* footer */
-
-footer{
-    background-color: black;
-    padding: 50px 0 0 0;
-}
-.footer-row{
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    margin: 0 auto;
-}
-.footer-col{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer-col a,
-.footer-col i,
-.footer-row p{
-    color: white;
-    text-decoration: none;
-}
-.footer-col h3{
-    color: rgba(255, 255, 255, 0.566);
-}
-.footer-col a{
-    font-size: 14px;
-}
-
-  /* Media Queries for Tablet and Mobile */
-  @media only screen and (max-width: 768px) {
-    .icon {
-      flex: 0 1 calc(33.33% - 20px); /* 33.33% width for each icon */
-    }
-    .get-info{
-        height: 300px;
-        margin: 50px auto 0 auto;
-    }
-    .get-info span{
-        font-size: 20px;
-    }
-    .get-info p{
-        font-size: 16px;
-    }
-    .footer-row{
-        width: 90vw;
-    }
-    .footer-col{
-        gap: 8px;
-    }
-    .footer-col h3{
-        font-size: 16px;
-    }
-    .footer-col a{
-        font-size: 12px;
-    }
-  }
   
   @media only screen and (max-width: 480px) {
     .icon {

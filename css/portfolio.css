@@ -1,0 +1,64 @@
+/* Portfolios */
+
+.portfolios{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ports, .port{
+    margin-top: 150px;
+}
+.port{
+    margin-bottom: 100px;
+}
+.portfolios h2{
+    font-size: 20px;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80vw;
+}
+.portfolio-item{
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.247);
+}
+.one{
+    background: url("/images/pics1.JPG");
+}
+.two{
+    background: url("/images/pics4.JPG");
+}
+.three{
+    background: url("/images/pics5.JPG");
+}
+.one, .two, .three, .four, .five,.six, .seven,.eight,.nine{ 
+    background-position: center;
+    background-size: cover;
+}
+.portfolio-details {
+    position: absolute;
+    top: 0;
+    left: -120%; /* Initially positioned outside */
+    width: 100%;
+    height: 100%;
+    background-color: #0057b3c2;
+    transition: left 0.3s ease;
+    padding: 20px 0;
+  }
+  
+  .portfolio-item:hover .portfolio-details {
+    left: 0; /* Slide in from the left on hover */
+  }
+  .portfolio-details h3,
+  .portfolio-details p{
+    color: white;
+  }
+
