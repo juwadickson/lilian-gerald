@@ -31,13 +31,13 @@
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.247);
 }
 .one{
-    background: url("/images/pics1.JPG");
+    background: url("../images/pics1.JPG");
 }
 .two{
-    background: url("/images/pics4.JPG");
+    background: url("../images/pics4.JPG");
 }
 .three{
-    background: url("/images/pics5.JPG");
+    background: url("../images/pics5.JPG");
 }
 .one, .two, .three, .four, .five,.six, .seven,.eight,.nine{ 
     background-position: center;
