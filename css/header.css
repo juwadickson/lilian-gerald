@@ -1,0 +1,141 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0;
+}
+.header-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    margin-right: auto; /* Pushes the menu to the left */
+}
+
+.main-menu li {
+    margin-right: 20px;
+}
+.main-menu li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.main-menu li a:hover{
+    color: #ff69b4;
+}
+.portfolio-btn {
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Mobile Menu styles */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff69b4;
+    z-index: 999;
+    text-align: center;
+    padding-top: 80px; /* Adjust spacing from top */
+    box-sizing: border-box;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 20px;
+}
+
+.mobile-menu a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('cancel-icon.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .tab-icon {
+        width: 30px;
+        height: 4px;
+        background-color: #ffffff;
+        margin-bottom: 6px;
+    }
+
+    .mobile-menu {
+        padding-top: 20px;
+    }
+
+    .mobile-menu ul {
+        margin-top: 40px;
+    }
+    .portfolio-btn{
+        display: none;
+    }
+}
+
+
+
+
+
+
