@@ -97,7 +97,7 @@ html{
     justify-content: center;
     align-items: center;
     height: 70vh; /* Adjust height to almost cover the screen */
-    background: url("/img/G.png");
+    background: url("../img/G.png");
     background-repeat: no-repeat;
     background-color: #f0f0f0; /* Set background color for section */
 }
